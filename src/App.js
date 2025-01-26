@@ -24,8 +24,8 @@ function App() {
           {/* <Route path='/e-commerce/product' element={<Product />} >
             <Route path='/e-commerce/:productId' element={<Product />} />
           </Route> */}
-           <Route path="/e-commerce/product" element={<Product />} />
-           <Route path="/e-commerce/product/:productId" element={<Product />} />
+           <Route path="/product" element={<Product />} />
+           <Route path="/product/:productId" element={<Product />} />
           <Route path='/e-commerce/cart' element={<Cart />} />
           <Route path='/e-commerce/login' element={<LoginSignup />} />
         </Routes>
