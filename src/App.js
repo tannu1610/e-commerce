@@ -17,15 +17,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Shop />} />
-          <Route path='/mens' element={<ShopCategory banner={men_banner} category="men" />} />
-          <Route path='/womens' element={<ShopCategory banner={women_banner} category="women" />} />
-          <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid" />} />
-          <Route path='/product' element={<Product />} >
+          <Route path='/e-commerce' element={<Shop />} />
+          <Route path='/e-commerce/mens' element={<ShopCategory banner={men_banner} category="men" />} />
+          <Route path='/e-commerce/womens' element={<ShopCategory banner={women_banner} category="women" />} />
+          <Route path='/e-commerce/kids' element={<ShopCategory banner={kid_banner} category="kid" />} />
+          <Route path='/e-commerce/product' element={<Product />} >
             <Route path=':productId' element={<Product />} />
           </Route>
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/login' element={<LoginSignup />} />
+          <Route path='/e-commerce/cart' element={<Cart />} />
+          <Route path='/e-commerce/login' element={<LoginSignup />} />
         </Routes>
         <Footer />
       </BrowserRouter>
